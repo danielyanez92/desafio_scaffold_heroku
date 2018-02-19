@@ -1,0 +1,14 @@
+<table>
+<tr>
+  <th>Nombre estudiante</th>
+  <th>Edad</th>
+  <th>Email</th>
+</tr>
+<tr>
+  <% @students.each do |student| %>
+  <td><%= student.name %></td>
+  <td><%= student.age %></td>
+  <td><%= student.email %></td>
+</tr>
+<% end %>
+</table>
